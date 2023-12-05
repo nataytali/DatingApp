@@ -5,7 +5,7 @@ input[type=file]{
     color: transparent;
 }
 img:hover {
-    transform: scale(2.8, 2.8);
+    transform: scale(2.2, 2.2);
     transition-duration: 500ms;
     transition-timing-function: ease-out;
     position: relative;
