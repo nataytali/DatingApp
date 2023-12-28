@@ -24,7 +24,8 @@ namespace API.Services
         {
             var claims = new List<Claim> // pieces of information asserted about a subject. For example a claim called name that asserts that the name of the user authenticating is "John Doe".
             {
-                new Claim(JwtRegisteredClaimNames.NameId, user.UserName)
+                new Claim(JwtRegisteredClaimNames.NameId, user.Id.ToString()),
+                new Claim(JwtRegisteredClaimNames.UniqueName, user.UserName),
             };
 
             var creds = new SigningCredentials(_key, SecurityAlgorithms.HmacSha512Signature);
