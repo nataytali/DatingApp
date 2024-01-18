@@ -8,6 +8,7 @@ using API.DTOs;
 using System.Security.Claims;
 using API.Extensions;
 using API.Helpers;
+using CloudinaryDotNet.Actions;
 
 namespace API.Controllers
 {
